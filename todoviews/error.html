@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Page</title>
+        <h1>Error! in Login. Wrong Credential.</h1>
+        <style>
+            body{
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            form{
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                margin: 50px auto;
+                max-width: 400px;
+                padding: 20px;
+            }
+
+ 
+
+            input[type="submit"]{
+                background-color: rgb(103, 153, 28);
+                border: none;
+                border-radius: 3px;
+                color: white;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 10px;
+                width: 100%
+            }
+
+            input[type="submit"]:hover{
+                background-color: rgb(27, 113, 27);
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/log" method="get">
+            <h2>Try Login Again.</h2>
+            <input type="submit" value="log">
+        </form>
+        <form action="/createAccount" method="get">
+            <h2>New User?</h2>
+            <input type="submit" value="create account"/>
+        </form>
+    </body>
+</html>
